@@ -1,4 +1,4 @@
-import { helloRoutes } from "@modules/Hello/hello.routes";
+import { helloRoutes } from "@modules/hello/hello.routes";
 import type { FastifyPluginAsync } from "fastify";
 import fp from "fastify-plugin";
 

@@ -1,4 +1,4 @@
-import { helloResponseSchema } from "@modules/Hello/hello.schemas";
+import { helloResponseSchema } from "@modules/hello/hello.schemas";
 import { httpErrorSchema } from "@schemas/erros.schemas";
 import type { FastifyTypedInstance } from "@types";
 import type { FastifyPluginAsync } from "fastify";

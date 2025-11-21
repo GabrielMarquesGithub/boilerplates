@@ -1,7 +1,7 @@
 import { env } from "@configs/env.js";
 import fastifyHelmet from "@fastify/helmet";
 import fastifyRateLimit from "@fastify/rate-limit";
-import { helloModule } from "@modules/Hello";
+import { helloModule } from "@modules/hello";
 import { handlersPlugin } from "@plugins/handlers";
 import { swaggerPlugin } from "@plugins/swagger";
 import type { FastifyTypedInstance } from "@types";
@@ -38,7 +38,7 @@ export function buildApp(options: IBuildAppOptions = {}): FastifyTypedInstance {
 	app.register(handlersPlugin);
 
 	// --- Módulos ---
-	app.register(helloModule);
+	app.register(helloModule, { prefix: "/api/v1" });
 
 	return app;
 }
