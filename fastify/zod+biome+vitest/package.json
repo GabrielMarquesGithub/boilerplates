@@ -1,5 +1,5 @@
 {
-	"name": "fastify-zod-biome",
+	"name": "fastify-zod-biome-vitest",
 	"private": true,
 	"version": "1.0.0",
 	"scripts": {
