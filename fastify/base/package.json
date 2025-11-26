@@ -6,7 +6,7 @@
 		"dev": "NODE_ENV=dev tsx watch src/server.ts",
 		"build": "tsc && tsc-alias",
 		"build:docs": "NODE_ENV=prod tsx src/scripts/build-swagger-doc.ts",
-		"start": "NODE_ENV=prod node dist/server.js",
+		"start": "NODE_ENV=prod node dist/src/server.js",
 		"test": "NODE_ENV=test vitest --run",
 		"test:watch": "NODE_ENV=test vitest",
 		"lint:check": "biome check",
